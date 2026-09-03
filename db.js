@@ -1,10 +1,10 @@
 const sql = require('mysql2');
 
-const pool = mysql.createPool({
+const pool = sql.createPool({
     host: 'localhost',
     user: 'aluno',
     password: 'ifsp',
     database: 'sistema_auth'
 });
 
-module.exports=pull.promise();
+module.exports=pool.promise();
